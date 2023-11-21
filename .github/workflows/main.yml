@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+env:
+  URL_TO_CURL: "http://demo.codegiant.io" 
+
+jobs:
+  run_pull:
+    name: run pull
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: curl
+        run: curl -I $URL_TO_CURL
