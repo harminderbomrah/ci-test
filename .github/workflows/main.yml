@@ -9,8 +9,8 @@ env:
   URL_TO_CURL: "http://demo.codegiant.io" 
 
 jobs:
-  run_pull:
-    name: run pull
+  curl_request:
+    name: Curl Request
     runs-on: ubuntu-latest
 
 
